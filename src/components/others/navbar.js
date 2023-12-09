@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import { Button, Tooltip, Modal, Divider } from "antd";
 import { PlusOutlined, InfoOutlined, GithubOutlined } from '@ant-design/icons';
 
-const navbar = () => {
+const Navbar = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
@@ -35,7 +35,7 @@ const navbar = () => {
                             <li>→ Welcome to this SQL Query Client built using Next Js.</li>
                             <li>→ Choose your query table from the choices available.</li>
                             <li>→ Select the columns to Query.</li>
-                            <li>→ Hit the 'Run Query' button.</li>
+                            <li>→ Hit the &apos;Run Query&apos; button.</li>
                             <li>→ Sort and Filter the results by using the search box.</li>
                             <li>→ Use the Download CSV button to get the searched data as CSV.</li>
                         </ul>
@@ -59,4 +59,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar

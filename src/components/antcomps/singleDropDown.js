@@ -6,7 +6,7 @@ import { Button, Dropdown, message, Space, Tooltip } from 'antd';
 import { useState } from 'react';
 import dropitems from './dropItems';
 
-const dropdown = ({ buttonCount, onTableChange, selectedItem }) => {
+const Dropdown = ({ buttonCount, onTableChange, selectedItem }) => {
 
   const items = dropitems[buttonCount];
   const [count, setCount] = useState(0);
@@ -44,4 +44,4 @@ const dropdown = ({ buttonCount, onTableChange, selectedItem }) => {
   )
 }
 
-export default dropdown
+export default Dropdown
