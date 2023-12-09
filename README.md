@@ -1,6 +1,6 @@
 # NEXT SQL CLIENT 💻
 
-A Next-Js and Tailwind-CSS-based Web Application to run SQL Queries on the go and fetch data. This client allows users to select or write queries in an editor. The data obtained can be searched and downloaded as CSV.
+A Next-Js and Tailwind-CSS-based Web Application to run SQL Queries on the go and fetch data easily. This client allows users to select queries or write it in an editor. The data obtained can be filtered and downloaded as CSV.
 
 ## Live Demo 👨‍💻
 
@@ -12,7 +12,7 @@ The project is deployed using Vercel and live at [Next SQL Client](https://next-
 
 [![image](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)[![image]( 	https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)[![image](https://img.shields.io/badge/Ant%20Design-1890FF?style=for-the-badge&logo=antdesign&logoColor=white)](https://ant.design/)
 
-I chose Next Js 14.0.3 as the frontend framework for our project, and used Tailwind CSS for styling the website. Further, I sourced several components from Antd components.
+I have choosed Next Js 14.0.3 as the frontend framework for our project, and used Tailwind CSS for styling the website. Further, I sourced several components from Antd components.
 
 ## Dependencies 🛠️
 
@@ -27,7 +27,7 @@ I chose Next Js 14.0.3 as the frontend framework for our project, and used Tailw
 ✅ Users can filter the search results using keywords.  
 ✅ The filtered search result can downloaded as CSV.  
 ✅ The structure of Data can be visualised on the right pane.  
-✅ Expandable an modular design of the project.  
+✅ Expandable and modular design of the project.  
 
 ## Planned Features (for future versions) 🗓️
 
@@ -37,9 +37,19 @@ I chose Next Js 14.0.3 as the frontend framework for our project, and used Tailw
 
 ## Page Load Time ⏰
 
+<a href="https://drive.google.com/uc?export=view&id=1TOYmmKoh7TmYJlq80k7ISx1iQPL-VXZh"><img src="https://drive.google.com/uc?export=view&id=1TOYmmKoh7TmYJlq80k7ISx1iQPL-VXZh" style="width: 500px; max-width: 100%; height: auto" title="Page Load time measured using Lighthouse" />
 
+I measured the load times of the website using Google Lighthouse. The performance ratings were good and the content load time ranged between 0.3s to 0.7s for the desktop.
 
-First, run the development server:
+## Steps taken for faster load-times ➕
+
+- Used Next Js instead of React Js since the earlier one is faster and provides server-side and client-side rendering abilities.
+- Deployed the site through Vercel, since Next Js is maintained by Vercel itself.
+- Scrutnized the code to keep only the essential code and followed best-practices of coding.
+
+## Running on Local Machine
+
+Clone the repo first and then run the development server through:
 
 ```bash
 npm run dev
@@ -55,8 +65,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -64,10 +72,6 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with ❤️ & ⚡ by Yash Raj
