@@ -11,6 +11,7 @@ import { message} from 'antd';
 
 export default function Home() {
 
+  // Global State Variables
   const Tables = ['Customers', 'Products', 'OrderDetails'];
   const [selectedTable, setSelectedTable] = useState('Customers');
   const [selectedTableNo, setSelectedTableNo] = useState(0); // 0, 1, 2
@@ -21,6 +22,7 @@ export default function Home() {
   const [dataTableNo, setDataTableNo] = useState(0); // 0, 1, 2
   const [dataItems, setDataItems] = useState([]);
 
+  // Query generation for editor
   useEffect(() => {
     if(selectedItems.length === dropItems[1][selectedTableNo].length){
       setQuery(`SELECT * FROM ${selectedTable}`);
@@ -35,6 +37,7 @@ export default function Home() {
     setSearchActive(editorQuery===query);
   }, [editorQuery, setQuery])
 
+  // Refresh function for app
   const refreshClick = () => {
     setSelectedTableNo(0); 
     setSelectedTable('Customers');
@@ -48,6 +51,7 @@ export default function Home() {
       <div className="flex flex-col items-center h-full">
         <div className='h-fit lg:h-1/6 w-full flex flex-col items-center justify-around'>
           <Navbar />
+          {/* Query selection section */}
           <div className='bg-slate-300 w-full p-3 rounded'>
             <SelectionInput
               selectedItem={selectedTable}
@@ -64,6 +68,7 @@ export default function Home() {
         </div>
         <div className='lg:h-5/6 flex flex-col w-full'>
           <div className='h-1/6 w-full'>
+            {/* Editor section */}
             <SqlEditor 
               query={query}
               onEditorChange={(e)=>{setEditorQuery(e)}}
@@ -71,6 +76,7 @@ export default function Home() {
           </div>
           <div className='h-5/6 w-full lg:grid lg:grid-cols-10'>
             <div className='h-1/2 lg:col-span-7 lg:h-full'>
+              {/* Data Table & Directory section */}
               <DataView 
                 selectedTableNo={dataTableNo}
                 selectedItems={dataItems}

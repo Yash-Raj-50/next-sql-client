@@ -50,7 +50,7 @@ const navbar = () => {
                     </Modal>
                 </Tooltip>
                 <Tooltip title="Github Repo">
-                    <Button shape='circle' size='default' href='https://github.com/Yash-Raj-50' target='_b' className='mx-2 flex items-center justify-center'>
+                    <Button shape='circle' size='default' href='https://github.com/Yash-Raj-50/next-sql-client' target='_b' className='mx-2 flex items-center justify-center'>
                         <GithubOutlined />
                     </Button>
                 </Tooltip>

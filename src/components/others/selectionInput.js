@@ -24,15 +24,18 @@ export default function SelectionInput({
             <div className="flex flex-col lg:flex-row items-center w-full justify-center lg:justify-start">
                 <div className="mr-4">QUERY</div>
                 <div className="w-full lg:w-fit gap-2 lg:gap-0 flex items-center flex-col justify-center lg:flex-row">
+                    {/* 1st Dropdown component */}
                     <Dropdown buttonCount={0}
                         selectedItem={"SELECT"}
                     />
+                    {/* Check Dropdown component */}
                     <MultiDropdown
                         tableNo={selectedTableNo}
                         selectedBoxItems={selectedItems}
                         onItemsChange={(items) => { onSetItems(items) }}
                     />
                     <span className="mx-2 text-slate-600">FROM</span>
+                    {/* Table selection dropdown component */}
                     <Dropdown
                         buttonCount={2}
                         selectedItem={selectedItem}
