@@ -5,7 +5,6 @@ import MultiDropdown from "../antcomps/checkDropDown";
 import { Button } from "antd";
 import { SearchOutlined } from '@ant-design/icons';
 import { ReloadOutlined } from '@ant-design/icons';
-import { useState } from "react";
 
 export default function SelectionInput({ 
         selectedTableNo,
