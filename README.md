@@ -6,13 +6,13 @@ A Next-Js and Tailwind-CSS-based Web Application to run SQL Queries on the go an
 
 [![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yash-Raj-50/next-sql-client)
 
-The project is deployed using Vercel and live at [Next SQL Client](https://next-sql-client.vercel.app/) . Check it out !!
+The project is deployed using Vercel and is live at [Next SQL Client](https://next-sql-client.vercel.app/) . Check it out !!
 
 ## Tech Stack 👩‍🔧
 
 [![image](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)[![image]( 	https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)[![image](https://img.shields.io/badge/Ant%20Design-1890FF?style=for-the-badge&logo=antdesign&logoColor=white)](https://ant.design/)
 
-I have choosed Next Js 14.0.3 as the frontend framework for our project, and used Tailwind CSS for styling the website. Further, I sourced several components from Antd components.
+I have chosen Next Js 14.0.3 as the frontend framework for our project and used Tailwind CSS for styling the website. Further, I sourced several components from Antd components.
 
 ## Dependencies 🛠️
 
@@ -41,7 +41,7 @@ I have choosed Next Js 14.0.3 as the frontend framework for our project, and use
 
 I measured the load times of the website using Google Lighthouse. The performance ratings were good and the content load time ranged between 0.3s to 0.7s for the desktop.
 
-## Steps taken for faster load-times ➕
+## Steps taken for faster load times ➕
 
 - Used Next Js instead of React Js since the earlier one is faster and provides server-side and client-side rendering abilities.
 - Deployed the site through Vercel, since Next Js is maintained by Vercel itself.
